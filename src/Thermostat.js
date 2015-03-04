@@ -34,3 +34,9 @@ Thermostat.prototype.powerSwitch = function (){
     this.maxTemp = 32
   };
 };
+
+
+
+
+
+
