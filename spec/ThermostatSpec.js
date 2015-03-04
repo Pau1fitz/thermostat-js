@@ -46,6 +46,27 @@
     thermostat.resetter();
     expect(thermostat.temperature).toEqual(20)
   });
+
+  it('turns green if temp less than 18', function(){
+    while(thermostat.temperature > 12){
+      thermostat.decrease();
+    }
+    expect(thermostat.colour()).toEqual("green");
+  });
+
+  it('turns red if temp more than 24', function(){
+    while(thermostat.temperature < 25){
+      thermostat.increase();
+    }
+    expect(thermostat.colour()).toEqual("red");
+  });
+
+  it('turns orange if temp more is 20', function(){
+    expect(thermostat.colour()).toEqual("orange");
+  });
+
+
+
 });
 
 

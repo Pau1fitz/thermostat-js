@@ -35,6 +35,30 @@ Thermostat.prototype.powerSwitch = function (){
   };
 };
 
+Thermostat.prototype.colour = function() {
+  if (this.temperature < 18) {
+    return "green";
+  }
+  else if (this.temperature > 24)  {
+    return "red";
+  }
+  else{
+    return "orange";
+  };
+};
+
+
+Thermostat.prototype.colour = function() {
+  if (this.temperature < 18) {
+    return "green";
+  }
+  else if (this.temperature > 24)  {
+    return "red";
+  }
+  else{
+    return "orange"
+  };
+};
 
 
 
