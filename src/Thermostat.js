@@ -42,7 +42,7 @@ Thermostat.prototype.powerSwitchOff = function(){
 
 Thermostat.prototype.colour = function() {
   if (this.temperature < 18) {
-    return "green";
+    return "blue";
   }
   else if (this.temperature > 24)  {
     return "red";
@@ -52,18 +52,6 @@ Thermostat.prototype.colour = function() {
   };
 };
 
-
-Thermostat.prototype.colour = function() {
-  if (this.temperature < 18) {
-    return "green";
-  }
-  else if (this.temperature > 24)  {
-    return "red";
-  }
-  else{
-    return "orange"
-  };
-};
 
 
 

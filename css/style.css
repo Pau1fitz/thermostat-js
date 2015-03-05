@@ -1,7 +1,6 @@
 body{
   text-align: center;
-  /*background-image: url("http://www.vanishingtattoo.com/tds/images/patriotic/flag_large/flag_germany_009.jpg");*/
-}
+  }
 
 h1{
   color: black;
@@ -31,3 +30,25 @@ a {
   border-left: 1px solid #CCCCCC;
 }
 
+#myDivId{
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  overflow:hidden;
+  position:relative;
+}
+
+#content{
+  z-index:9;
+  position:relative;
+}
+
+#scale{
+  z-index;1;
+  width:0px;
+  height:100%;
+  position:absolute;
+  background:blue;
+  left:0px;
+  top:0px;
+}

@@ -50,7 +50,7 @@
     while(thermostat.temperature > 12){
       thermostat.decrease();
     }
-    expect(thermostat.colour()).toEqual("green");
+    expect(thermostat.colour()).toEqual("blue");
   });
 
   it('turns red if temp more than 24', function(){

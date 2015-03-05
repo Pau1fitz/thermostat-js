@@ -25,14 +25,14 @@
   });
 
   $("#powerSaveOn").click(function(){
-    thermostat.powerSwitch();
+    thermostat.powerSwitchOn();
     $("#temperature").text(thermostat.temperature)
     $("#toggle").text("On");
     textColour();
   });
 
   $("#powerSaveOff").click(function(){
-    thermostat.powerSwitch();
+    thermostat.powerSwitchOff();
     $("#temperature").text(thermostat.temperature)
     $("#toggle").text("Off");
     textColour();
@@ -43,4 +43,10 @@
     $("#temperature").text(thermostat.temperature)
     textColour();
   });
+
+
+  $("#bodycolor").click(function() {
+    $("#scale").animate({ width: '100%' }, 10000);
+});
+
 });
