@@ -26,14 +26,13 @@
     while(thermostat.temperature > 10) {
       thermostat.decrease();
     };
-
     expect(thermostat.temperature).toEqual(10);
     thermostat.decrease();
     expect(thermostat.temperature).toEqual(10);
   });
 
   it('has a maximum temperature of 32 degrees', function(){
-    thermostat.powerSwitch();
+    thermostat.powerSwitchOff();
     while(thermostat.temperature < 32) {
       thermostat.increase();
     };
@@ -65,8 +64,6 @@
     expect(thermostat.colour()).toEqual("orange");
   });
 
-
-
 });
 
 
@@ -83,13 +80,13 @@ describe('Powersaver', function(){
 
   it('can be switched off', function(){
     expect(thermostat.powerSaver).toEqual(true);
-    thermostat.powerSwitch();
+    thermostat.powerSwitchOff();
     expect(thermostat.powerSaver).toEqual(false);
   });
 
   it('can be switched back on', function(){
-    thermostat.powerSwitch();
-    thermostat.powerSwitch();
+    thermostat.powerSwitchOff();
+    thermostat.powerSwitchOn();
     expect(thermostat.powerSaver).toEqual(true);
   });
 
@@ -104,11 +101,11 @@ describe('Powersaver', function(){
   });
 
   it('switched on when temperature greater than 25 reset', function(){
-    thermostat.powerSwitch();
+    thermostat.powerSwitchOff();
     while(thermostat.temperature < 25) {
       thermostat.increase();
     };
-    thermostat.powerSwitch();
+    thermostat.powerSwitchOn();
     expect(thermostat.temperature).toEqual(20);
   });
 

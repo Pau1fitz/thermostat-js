@@ -25,12 +25,17 @@ Thermostat.prototype.resetter = function(){
   return this.temperature = 20;
 };
 
-Thermostat.prototype.powerSwitch = function (){
-  this.powerSaver = (this.powerSaver ? false : true);
-  if (this.powerSaver === true){
-      this.resetter();
-  }
-  else if(this.powerSaver === false){
+Thermostat.prototype.powerSwitchOn = function(){
+  this.powerSaver = true
+  if(this.powerSaver === true){
+    this.maxTemp = 26
+  };
+  this.resetter();
+};
+
+Thermostat.prototype.powerSwitchOff = function(){
+  this.powerSaver = false
+  if(this.powerSaver === false){
     this.maxTemp = 32
   };
 };

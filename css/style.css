@@ -1,0 +1,33 @@
+body{
+  text-align: center;
+  /*background-image: url("http://www.vanishingtattoo.com/tds/images/patriotic/flag_large/flag_germany_009.jpg");*/
+}
+
+h1{
+  color: black;
+  font-family: 'Inconsolata', courier ;
+}
+
+p{
+  font-family: 'Inconsolata', courier ;
+}
+
+
+#temperature{
+  font-family: 'Inconsolata', courier ;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+a {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
