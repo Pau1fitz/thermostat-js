@@ -36,6 +36,8 @@ a {
   background-color: white;
   overflow:hidden;
   position:relative;
+  width: 50%;
+  margin-left:25%;
 }
 
 #content{

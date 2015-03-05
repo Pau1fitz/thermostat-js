@@ -44,9 +44,5 @@
     textColour();
   });
 
-
-  $("#bodycolor").click(function() {
-    $("#scale").animate({ width: '100%' }, 10000);
 });
 
-});
