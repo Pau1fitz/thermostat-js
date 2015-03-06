@@ -30,27 +30,3 @@ a {
   border-left: 1px solid #CCCCCC;
 }
 
-#myDivId{
-  border-style: solid;
-  border-color: black;
-  background-color: white;
-  overflow:hidden;
-  position:relative;
-  width: 50%;
-  margin-left:25%;
-}
-
-#content{
-  z-index:9;
-  position:relative;
-}
-
-#scale{
-  z-index;1;
-  width:0px;
-  height:100%;
-  position:absolute;
-  background:blue;
-  left:0px;
-  top:0px;
-}
